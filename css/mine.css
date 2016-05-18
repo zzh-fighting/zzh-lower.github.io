@@ -1,0 +1,262 @@
+html,body {height: 100%;width: 100%;}
+			img {display: block;}
+			.swiper-container {height: 100%;width: 100%;}
+			/*音乐播放器动画开始*/
+			.myaudio{width: 0.88rem;height: 0.88rem;background: url(../images/music_on.png) no-repeat center;-webkit-border-radius:50%;z-index: 999;position: fixed;top: 3rem;right: 0;-webkit-animation:audioRotating 3s linear 0.9s infinite;}
+			@-webkit-keyframes audioRotating{
+				from{-webkit-transform: rotate(0deg);}
+				to{-webkit-transform: rotate(360deg);}
+			}
+			/*结束*/
+			.myaudio_off{width: 0.88rem;height: 0.88rem;background: url(../images/music_off.png) no-repeat center;z-index: 999;position: fixed;top: 3rem;right: 0;}
+			/*=============slide1=================*/
+			.one {background: url(../images/sky.jpg) no-repeat left top;background-size: cover;}
+			.one .grass {width: 4rem;height: 1.2rem;position: absolute;bottom: 0;left: 0;z-index: 1;}
+			.one .grass2 {width: 4rem;height: 1.2rem;position: absolute;bottom: 0;right: 0;}
+			/*太阳当空照动画开始*/
+			.one .text{position: absolute;top: 1rem;right: .5rem;font-size: 0.2rem;color: #fff;font-weight:600;opacity: 0;}
+			.showText{-webkit-animation-name: showText;
+			-webkit-animation-timing-function:ease-in;}
+			@-webkit-keyframes showText {
+				0%{opacity: 0;right: -1rem;}
+				20%{opacity: 0.2;right: 1.2rem;}
+				50%{opacity: 0.6;right: 1.2rem;}
+				100%{opacity: 1;right: .5rem;}
+			}
+			/*结束*/
+			/*玫瑰花动画开始*/
+			.one .roses {width: 4rem;height: 1.2rem;position: absolute;bottom: 0.55rem;left: 0;z-index:2;opacity:0;}
+			.showRose{-webkit-animation-name: showRose;
+			-webkit-animation-timing-function:ease-in;
+			-webkit-animation-fill-mode:forwards;}
+			@-webkit-keyframes showRose {
+				0% {opacity: 0;}
+				20%{opacity: .2;}
+				50%{opacity: .5;}
+				80%{opacity: .8;}
+				100% {opacity: 1;}
+			}
+			/*玫瑰花动画结束*/
+			/*蜜蜂动画开始*/
+			.one .bees {position: absolute;top: 3rem;right: 0;/*-webkit-animation: flyBee 2s 1.2s forwards;*/opacity: 0;}
+			.flyBee {-webkit-animation-name: flyBee;-webkit-animation-timing-function:ease-in-out;}
+			@-webkit-keyframes flyBee {
+				from {opacity: 0.5;left: 100%;}
+				to {opacity: 1;left: 0%;}
+			}
+			/*蜜蜂动画结束*/
+			.two {/*background: url(../images/sky.jpg) no-repeat;*/}
+			.two .hill{z-index: 2;position: absolute;bottom: 0;right:0;width:100%;height: 4rem;}
+			/*学校动画开始*/
+			.two .house{position: absolute;bottom: 3.6rem;right:0.25rem;height: 2rem;}
+			.showHouse{-webkit-animation-name: showHouse;
+			-webkit-animation-timing-function: ease-in;}
+			@-webkit-keyframes showHouse{
+				from{opacity: 0;}
+				to{opacity: 1;}
+			}
+			/*小孩动画开始*/
+			.two .kids{z-index: 3;position: absolute;bottom: 2.4rem;left:-0.25rem;opacity: 0;}
+			.showKids{-webkit-animation-name: showKids;
+			-webkit-animation-timing-function: ease-in;}
+			@-webkit-keyframes showKids{
+				from{left: -9rem;}
+				to{left:-0.25rem;opacity: 1;}
+			}
+			/*小鸟动画开始*/
+			.two .bird{position: absolute;left: 1rem;/*top: 2rem;*/opacity: 0;}
+			.showBird{-webkit-animation-name: showBird;
+			-webkit-animation-timing-function: linear;}
+			@-webkit-keyframes showBird{
+				0%{top: -8rem;-webkit-transform: rotate(0deg);}
+				50%{top: 0;opacity: 0.5;-webkit-transform: rotate(30deg);}
+				100%{top: 2rem;opacity: 1;-webkit-transform: rotate(0deg);}
+			}
+			/*早早早动画开始*/
+			.two .twiter{width: 2rem;height:1.6rem;font:0.2rem/1.6rem "微软雅黑";background: url(../images/say.png) no-repeat;text-align: center;/*color:cadetblue;*/position: absolute;right: 0;top: 0;opacity: 0;}
+			.morning{-webkit-animation-name: morning;
+			-webkit-animation-timing-function: linear;}
+			@-webkit-keyframes morning{
+				0%{-webkit-transform: scale(0);}
+				50%{opacity:0.5;-webkit-transform: scale(1.2);}
+				100%{opacity:1;-webkit-transform: scale(1);}
+			}
+			/*==================slide3====================*/
+			/*秋叶动画开始*/
+			.three .fallTree{position: absolute;left: 0;opacity: 0;}
+			.fallTreeShow{-webkit-animation-name: fallTreeShow;
+			-webkit-animation-timing-function: linear;-webkit-animation-fill-mode: forwards;}
+			@-webkit-keyframes fallTreeShow{
+				from{opacity: 0;}
+				to{opacity: 1;}
+			}
+			/*结束*/
+			.three .land{position: absolute;right: 0;bottom: 0;}
+			.three .myShadow{position: absolute;left: 0;bottom: 0;z-index: -1;}
+			/*小女孩骑车动画开始*/
+			.three .mygirl{position: absolute;/*left: 3rem;bottom: .3rem;*/z-index: 1;opacity: 0;}
+			.mygirlShow{-webkit-animation-name: mygirlShow;
+			-webkit-animation-timing-function: linear;}
+			@-webkit-keyframes mygirlShow{
+				0%{left: 100%;bottom: 2rem;}
+				50%{opacity: .8;left: 3rem;bottom: .3rem;}
+				100%{opacity: 1;left: 1rem;bottom: .3rem;}
+			}
+			/*结束*/
+			/*长颈鹿出现动画开始*/
+			.three .giraffe{position: absolute;top: 6.5rem;right: 0;z-index: -1;opacity: 0;}
+			.giraffeShow{-webkit-animation-name: giraffeShow;
+			-webkit-animation-timing-function: linear;}
+			@-webkit-keyframes giraffeShow{
+				from{}
+				to{opacity: 1;}
+			}
+			/*结束*/
+			/*文本出现动画开始*/
+			.three .gotoschool{position: absolute;top: 0;right: .5rem;font-size: 0.2rem;line-height:0.3rem;color:darkorange;width: 0.2rem;height: 4rem;opacity: 0;}
+			.gotoschoolShow{-webkit-animation-name: gotoschoolShow;
+			-webkit-animation-timing-function: linear;-webkit-transform-origin:center top;}
+			@-webkit-keyframes gotoschoolShow{
+				0%{-webkit-transform: scale(1);}
+				50%{opacity: .7;-webkit-transform: scale(1.4);}
+				70%{opacity: .7;-webkit-transform: scale(1.4);}
+				100%{opacity: 1;-webkit-transform: scale(1);}
+			}
+			/*结束*/
+			.three .butterfly{position: absolute;left: 2rem;top: 4rem;}
+			/*==================slide4====================*/
+			.four {background: url(../images/bg.jpg) no-repeat;background-size:cover ;}
+			.four .book{position: absolute;left: .5rem;top: .5rem;}
+			.four .pencil{z-index: 1;position: absolute;top: 2rem;}
+			/*爱学习爱劳动动画开始*/
+			.four .study{z-index: 4;font:0.5rem/0.6rem "微软雅黑";width: 100%;height: 0.6rem;text-align:center;color: brown;opacity:0;}
+			.studyRotate{-webkit-animation-name: studyRotate;
+			-webkit-animation-timing-function: linear;
+			/*-webkit-transform-origin: 3rem 5rem;*/}
+			@-webkit-keyframes studyRotate{
+				0%{-webkit-transform: rotate(0deg);}
+				25{opacity:.5;-webkit-transform: rotate(30deg);}
+				50%{opacity:.8;-webkit-transform: rotate(-30deg);}
+				100%{opacity:1;-webkit-transform: rotate(360deg);/*-webkit-transform: translateX(1rem);*/-webkit-transform: translateY(4rem);}
+			}
+			/*结束*/
+			/*写字的女孩动画开始*/
+			.four .goodgirl{z-index: 2;position: absolute;right: .5rem;/*top: .7rem;*/opacity: 0;}
+			.goodgirlWrite{-webkit-animation-name: goodgirlWrite;
+			-webkit-animation-timing-function: linear;}
+			@-webkit-keyframes goodgirlWrite{
+				from{top: -5rem;}
+				to{top: .7rem;opacity: 1;}
+			}
+			/*结束*/
+			/*两本书动画开始*/
+			.four .twoBooks{z-index: 2;position: absolute;left: .5rem;top: .5rem;}
+			.twoBooksShow{-webkit-animation-name: twoBooksShow;
+			-webkit-animation-timing-function: linear;}
+			@-webkit-keyframes twoBooksShow{
+				from{opacity: 0;}
+				to{opacity: 1;}
+			}
+			/*结束*/
+			/*黑板动画开始*/
+			.four .blackboard{position: absolute;height:3rem;width:5.5rem;top: 6rem;/*left: .5rem;*/opacity: 0;}
+			.blackboardShow{-webkit-animation-name: blackboardShow;
+			-webkit-animation-timing-function: ease-in-out;}
+			@-webkit-keyframes blackboardShow{
+				from{left: 100%;}
+				to{opacity: 1;left: .5rem;}
+			}
+			/*结束*/
+			/*梯子动画开始*/
+			.four .ladder{z-index: 2;position: absolute;height:2.67rem;width:2rem;top: 8rem;/*left: 4rem;*/opacity: 0;}
+			.ladderShow{-webkit-animation-name: ladderShow;
+			-webkit-animation-timing-function: ease-in-out;}
+			@-webkit-keyframes ladderShow{
+				from{left: 100%;}
+				to{left: 4rem;opacity: 1;}
+			}
+			/*结束*/
+			/*梯子上小女孩动画开始*/
+			.four .ladderGirl{z-index: 3;height:2.67rem;width:2rem;position: absolute;top: 6.6rem;/*left: 3.8rem;*/opacity: 0;}
+			.ladderGirlShow{-webkit-animation-name: ladderGirlShow;
+			-webkit-animation-timing-function: linear;-webkit-animation-fill-mode: both;}
+			@-webkit-keyframes ladderGirlShow{
+				from{left: 100%;}
+				to{left: 3.8rem;opacity: 1;}
+			}
+			/*结束*/
+			/*板书动画开始*/
+			.four .math{z-index:1;position: absolute;height:2.5rem;width:4rem;top: 6rem;left: .7rem;opacity: 0;}
+			.mathShow{-webkit-animation-name: mathShow;
+			-webkit-animation-timing-function: ease-in-out;}
+			@-webkit-keyframes mathShow{
+				from{}
+				to{opacity: 1;}
+			}
+			/*结束*/
+			/*梯子旁的小朋友动画开始*/
+			.four .ladderFriends{z-index: 1;height:2rem;width:5rem;position: absolute;top: 8.6rem;/*left: 0.8rem;*/opacity: 0;}
+			.ladderFriendsShow{-webkit-animation-name: ladderFriendsShow;
+			-webkit-animation-timing-function: ease-in-out;}
+			@-webkit-keyframes ladderFriendsShow{
+				from{left: -8rem;}
+				to{left: 0.8rem;opacity: 1;}
+			}
+			/*结束*/
+			
+			/*==================slide5====================*/
+			.five {}
+			.five .skySmile{z-index: 0;height: 100%;/*width: 100%;*/}
+			/*宇宙飞船动画开始*/
+			.five .spaceship{z-index: 1;position: absolute;top: 0;}
+			.spaceshipShow{-webkit-animation:spaceshipShow;
+			-webkit-animation-timing-function:ease-out;}
+			@-webkit-keyframes spaceshipShow{
+				0%{left: 100%;opacity: 0;}
+				30%{opacity: 1;-webkit-transform: scale(1.2);}
+				80%{opacity: 1;-webkit-transform: scale(1);}
+				100%{opacity: .5;-webkit-transform: scale(1);}
+			}
+			/*结束*/
+			/*草丛动画开始*/
+			.five .grassMushroom{position: absolute;bottom: 0;opacity: 0;}
+			.grassMushroomShow{-webkit-animation:grassMushroomShow;
+			-webkit-animation-timing-function:ease-in-out;
+			-webkit-animation-fill-mode: both;}
+			@-webkit-keyframes grassMushroomShow{
+				from{bottom: -6rem;}
+				to{opacity: 1;bottom: 0;}
+			}
+			/*结束*/
+			/*小兔子动画开始*/
+			.five .rabbit{z-index: 1;position: absolute;left:2rem;bottom: .8rem;opacity: 0;}
+			.rabbitShow{-webkit-animation-name: rabbitShow;-webkit-animation-timing-function:linear;
+			-webkit-animation-fill-mode: forwards;}
+			@-webkit-keyframes rabbitShow{
+				from{opacity: 0;left: 100%;}
+				to{opacity: 1;left:2rem;}
+			}
+			/*结束*/
+			/*字体韵律动画开始*/
+			.five .endSing{z-index: 3;position: absolute;top:-1rem;left:3rem;font-size: 0.25rem;color: #fff;font-weight: 600;}
+			.endSing span{float: left;-webkit-transform:translateY(-1rem);opacity:0;}
+			.fallSing{-webkit-animation-name:fallSing;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode:forwards;}
+			@-webkit-keyframes fallSing{
+				from{-webkit-transform:translateY(0);opacity: 0;}
+				to{-webkit-transform:translateY(7rem);opacity: 1;}
+			}
+			/*结束*/
+			/*蒙层出现动画开始*/
+			.mask{position: absolute;left:1rem;top:2rem;width:3rem;height:5rem;padding:.5rem;background: #fff;border-radius:0.1rem;box-shadow:0 0 2px 2px #fff;z-index: 999;opacity: 0;-webkit-animation-name:mask;
+			-webkit-animation-fill-mode:forwards;}
+			@-webkit-keyframes mask{
+				from{opacity: 0;}
+				to{opacity:1;}
+			}
+			/*结束*/
+			.mask div{line-height: 0.4rem;width: 100%;color: rgba(0,0,0,.5);}
+			.mask .advice{color: rgba(0,0,0,.5);border: 1px solid #ccc;}
+			.mask .submit{color: rgba(0,0,0,.5);}
+			.mask .close{position: absolute;right: 0;top: 0;width: .4rem;height: .4rem;font-size:.4rem;text-align:center;line-height:.4rem;border: 1px solid #ccc;-webkit-border-radius:50%;}
