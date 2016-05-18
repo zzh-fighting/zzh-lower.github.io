@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<title>我的微场景</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/mine.css" />
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="myaudio">
+				<audio id="music" src="music/go to school.mp3" autoplay="autoplay" loop="loop"></audio>
+			</div>
+			<div class="swiper-wrapper">
+				<!--第一页-->
+				<div class="swiper-slide one">
+					<img class="sun ani" src="images/w12.ico" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"/>
+					<img class="grass ani" src="images/grass2.png" />
+					<img class="grass2 ani" src="images/grass.png" />
+					<img class="roses ani" src="images/roses.png" swiper-animate-effect="showRose" swiper-animate-duration="1.2s"/>
+					<img class="bees ani" src="images/bees.png" swiper-animate-effect="flyBee" swiper-animate-duration="2s" swiper-animate-delay="1.2s"/>
+					<p class="text ani" swiper-animate-effect="showText" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s">太阳当空照，花儿对我笑~~</p>
+				</div>
+				<!--第二页-->
+				<div class="swiper-slide two">
+					<img class="house ani" src="images/house.png" swiper-animate-effect="showHouse" swiper-animate-duration="1s"/>
+					<img class="hill" src="images/hill.png" />
+					<img class="kids ani" src="images/two-kids.png" swiper-animate-effect="showKids" swiper-animate-duration="1.2s" swiper-animate-delay="0.3s"/>
+					<img class="bird ani" src="images/bird.png" swiper-animate-effect="showBird" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s"/>
+					<p class="twiter ani" swiper-animate-effect="morning" swiper-animate-duration="1.2s" swiper-animate-delay="1.5s">“早~早~早!”</p>
+				</div>
+				<!--第三页-->
+				<div class="swiper-slide three">
+					<p class="gotoschool ani" swiper-animate-effect="gotoschoolShow" swiper-animate-duration="1.2s" swiper-animate-delay="2s">我去上学校，天天不迟到。</p>
+					<img class="fallTree ani" src="images/fallTree.png" swiper-animate-effect="fallTreeShow" swiper-animate-duration="1.2s" swiper-animate-delay="0"/>
+					<img class="land" src="images/land.png" />
+					<img class="myShadow" src="images/myshadow.png" />
+					<img class="mygirl ani" src="images/mygirl.png" swiper-animate-effect="mygirlShow" swiper-animate-duration="1.2s" swiper-animate-delay="0.5s" />
+					<img class="giraffe ani" src="images/giraffe.png" swiper-animate-effect="giraffeShow" swiper-animate-duration="1.2s" swiper-animate-delay="1.5s" />
+					<img class="butterfly" src="images/butterfly.gif" />
+					
+				</div>
+				<!--第四页-->
+				<div class="swiper-slide four">
+					<img class="book" src="images/book.png" />
+					<img class="pencil" src="images/pencil.png" />
+					<img class="goodgirl ani" src="images/goodgirl.png" swiper-animate-effect="goodgirlWrite" swiper-animate-duration="1s" swiper-animate-delay="0"/>
+					<img class="twoBooks ani" src="images/twobooks.png" swiper-animate-effect="twoBooksShow" swiper-animate-duration="1s" swiper-animate-delay="0.5s"/>
+					<p class="study ani" swiper-animate-effect="studyRotate" swiper-animate-duration="1s" swiper-animate-delay="3.5s">爱学习，爱劳动</p>
+					<img class="blackboard ani" src="images/blackboard.png" swiper-animate-effect="blackboardShow" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s"/>
+					<img class="ladder ani" src="images/ladder.png" swiper-animate-effect="ladderShow" swiper-animate-duration="1.2s" swiper-animate-delay="1.7s"/>
+					<img class="ladderGirl ani" src="images/ladderGirl.png" swiper-animate-effect="ladderGirlShow" swiper-animate-duration="1s" swiper-animate-delay="2.2s"/>
+					<img class="math ani" src="images/math.png" swiper-animate-effect="mathShow" swiper-animate-duration="1s" swiper-animate-delay="2.5s"/>
+					<img class="ladderFriends ani" src="images/ladderFriends.png" swiper-animate-effect="ladderFriendsShow" swiper-animate-duration="1s" swiper-animate-delay="3s"/>
+				</div>
+				<!--第五页-->
+				<div class="swiper-slide five">
+					<div id="mask-wrap" class="mask ani" swiper-animate-effect="mask" swiper-animate-duration="1s" swiper-animate-delay="4s">
+						<form>
+							<div><h3>问卷小调查</h3></div>
+							<div>你喜欢这个微信小场景吗？</div>
+							<div><input class="like" type="radio"  name="hobby" value="喜欢"/>喜欢&nbsp;&nbsp;<input type="radio" name="hobby" value="不喜欢"/>不喜欢</div>
+							<div>可以给我提点小建议吗？</div>
+							<div>
+								<textarea class="advice" rows="10" style="resize: none;"></textarea>
+							</div>
+							<div><input class="submit" type="button" value="提交您的反馈"/></div>
+						</form>
+						<div class="close">x</div>
+					</div>
+					<img class="skySmile" src="images/sky2.jpg" />
+					<img class="spaceship ani" src="images/spaceship.png" swiper-animate-effect="spaceshipShow" swiper-animate-duration="1s" swiper-animate-delay="0"/>
+					<img class="grassMushroom ani" src="images/grassMushroom.png" swiper-animate-effect="grassMushroomShow" swiper-animate-duration="1s" swiper-animate-delay=".5s"/>
+					<img class="rabbit ani" src="images/rabbit.png" swiper-animate-effect="rabbitShow" swiper-animate-duration="1.2s" swiper-animate-delay="1.2s"/>
+					<p class="endSing">
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.5s">长</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.55s">大</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.60s">要</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.65s">为</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.70s">人</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.75s">民</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.80s">立</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.85s">功</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.90s">劳</span>
+						<span class="ani" swiper-animate-effect="fallSing" swiper-animate-duration="1s" swiper-animate-delay="1.95s">！</span>
+					</p>
+				</div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--js文件引入-->
+		<script src="js/rem.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script type="text/javascript" src="js/swiper.animate.min.js"></script>
+		<script> 
+			var mySwiper = new Swiper('.swiper-container', {
+				loop: false,
+				direction: 'vertical',
+				pagination: '.swiper-pagination',
+				//autoplay:4500,
+				//virtualTranslate : true,
+				mousewheelControl: true,
+				onInit: function(swiper) {
+					swiperAnimateCache(swiper);
+					swiperAnimate(swiper);
+				},
+				onSlideChangeEnd: function(swiper) {
+					swiperAnimate(swiper);
+				},
+				onTransitionEnd: function(swiper) {
+					swiperAnimate(swiper);
+				}
+			})
+		</script>
+		<script>
+		(function(w,d){
+			/*====音乐播放器控制====*/
+			var myaudio = d.querySelector(".myaudio");
+			var music = d.querySelector("#music");
+			myaudio.addEventListener("click",function(){
+				if(music.paused){
+					myaudio.className="myaudio";
+					music.play();
+				}else{
+					myaudio.className="myaudio_off";
+					music.pause();
+				}
+			},false);
+			/*=====调查问卷开始======*/
+			var i=0;
+				var submit = document.querySelector(".submit");
+				
+				submit.addEventListener("click",function(){
+					/*获取是否喜欢*/
+					var like = document.querySelector("input:checked").value;
+					/*获取建议*/
+					var advice = document.querySelector(".advice").value;
+					i++;
+					window.localStorage.clear();
+					window.localStorage.setItem("喜欢吗？"+i,like);
+					window.localStorage.setItem("建议"+i,advice);
+				},false);
+			/*=====蒙层关闭按钮开始====*/
+			var close = document.querySelector(".close");
+			close.addEventListener("click",function(){
+					var mask = document.querySelector(".mask");
+					mask.style.display="none";
+				},false);
+		})(window,document);
+		</script>
+	</body>
+
+</html>
